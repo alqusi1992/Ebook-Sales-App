@@ -1,0 +1,29 @@
+<section class="py-2">
+  <div class="row">
+    <div class="col-md-6 text-center">
+      <h1 class="display-3 mt-3 pt-5">
+        Web Development E-Book
+      </h1>
+      <p class="lead">Learn web Development front to back</p>
+      <form action="/charge" method="POST">
+        <script
+          src="https://checkout.stripe.com/checkout.js" class="stripe-button"
+          data-key="pk_test_51JADhFIKYof8C1hXfy8jpBItcN6phxhPAcLB90HFsvPlbzExHkOwczf1wBv7G8NB9YxC68sUYsAqiAiPY2w80EsX00gCyIwHKb"
+          data-amount="2500"
+          data-name="Web Development Ebook"
+          data-description="Ebook written by Mo alqusi"
+          data-image="/img/marktplace1.png"
+          data-locale="auto">
+        </script>
+       <script>
+          // Hide default stripe button
+          document.getElementsByClassName('stripe-button-el')[0].style.display = 'none';
+        </script>
+        <button type="submit" class="btn btn-outline-dark text-white btn-lg">Purchase For $25</button>
+      </form>
+    </div>
+    <div class="col-md-6">
+      <img src="/img/ebook6.jpeg" alt="img"  width="400" height="450">
+    </div>
+  </div>
+</section>
